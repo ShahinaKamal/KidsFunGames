@@ -1,0 +1,125 @@
+html, body {
+/*     max-width: 100%;
+    overflow-x: hidden;
+ */    height: 100%;
+
+}
+
+body{
+    /* background-image: url(image/background-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto height; */
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:brown;
+}
+.container{
+    width:990px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.main-container{
+    background-image: url(image/background-2.jpg);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.main-wrapper {
+    background-image:url(image/background-2.jpg), url(image/background-3.jpg);
+   /*  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+	background-position:center top , center bottom;
+    background-repeat:no-repeat, no-repeat; 
+    margin-bottom: 30px;
+}
+header{
+/*     height:138px;*/
+    text-align: center;
+    color:white;
+    
+    
+}
+nav {
+    /* background-color: rgba(0, 0, 0, 0.338);  */
+    margin-top:10px;
+    background-color: rgb(0,128,0,0.8);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 10px 55px;
+    
+}
+a {
+    
+    font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none; 
+}
+nav a{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:1.2em;
+    color:white;
+}
+nav a:hover{
+    color:orange;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+nav a:active{
+    color:orange;
+}
+main{
+    text-align: center;
+/*     background-color: rgba(0, 128, 0, 0.338); 
+ */  
+ background-color: rgb(32,178,170,0.3);
+    margin-top:20px;
+   
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom:20px;
+
+}
+main p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main h1{
+    font-size: 84px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.328);
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top:20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.hidden{
+    display: none !important;
+  }
+.winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    height:100vh;
+    width: 100vw;
+  }
+  #maze{
+      text-align:center;
+      margin-top:30px;
+    
+    padding-bottom:20px;
+
+      
+
+  }
